@@ -21,7 +21,6 @@ class UserSeeder extends Seeder
 
         $users = User::all();
         foreach ($users as $user) {
-            \Log::debug($user->phone);
             $user->password = Hash::make($user->phone);
             $user->save();
         }

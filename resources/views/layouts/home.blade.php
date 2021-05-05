@@ -32,6 +32,7 @@
 <link href="fonts/marsha/stylesheet.css" rel="stylesheet">
 <link href="fonts/Blacksword.otf" rel="stylesheet">
 
+@toastr_css
 <link href="css/splide.min.css" rel="stylesheet">
 <link href="css/jquery.steps.css" rel="stylesheet">
 <link href="css/custom.css" rel="stylesheet">
@@ -44,8 +45,12 @@
 <!-- Preloader -->
 <div class="gla_page_loader gla_image_bck" data-color="#f2f2f2">
     <div class="gla_loader">
-        <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>      
-        <div class="gla_slide_midtitle">Annisa & Andi</div>
+        @auth
+            <div class="gla_slide_midtitle">Welcome {{ $user->name }}</div>
+        @else
+            <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>  
+            <div class="gla_slide_midtitle">Annisa & Andi</div>
+        @endauth  
         <p>Loading...</p>
     </div>
 </div>
@@ -70,6 +75,8 @@
 <script src="js/glanz_script.js"></script>
 
 <script src="js/splide.min.js"></script>
+@toastr_js
+@toastr_render
 @yield('js')
 @yield('script')
 </body>

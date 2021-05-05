@@ -17,13 +17,10 @@ Route::get('/', 'HomeController@index')->name('homepage');
 
 Auth::routes();
 
-Route::get('/home', 'AdminController@index')->name('home');
+Route::post('/comment', 'HomeController@storeComment')->name('comment-post');
 Route::get('/order', 'MenuController@showMenu')->name('order');
+Route::post('/order', 'MenuController@orderMenu')->name('order-post');
+Route::post('/mua', 'MenuController@storeMua')->name('mua-store');
 Route::get('/wear', 'MenuController@showWear')->name('wear');
 Route::get('/{username}', 'Auth\LoginController@loginForm')->name('login.show');
-// Route::post('/login', 'Auth\LoginController@login')->name('login');
 
-// Route::group(
-//     ['middleware' => 'auth'], function() {
-//     }
-// );

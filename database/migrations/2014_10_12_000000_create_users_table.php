@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('villa')->nullable();
             $table->string('no_table')->nullable();
             $table->string('is_order')->nullable();
+            $table->string('is_mua')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
