@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\UserImport;
+use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -13,9 +15,15 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $file = storage_path('app').'\seeds\user.csv';
-        \Log::debug($file);
+        $file = storage_path('app').'\seeds\user.txt';
 
         Excel::import(new UserImport, $file);
+
+        $users = User::all();
+        foreach ($users as $user) {
+            \Log::debug($user->phone);
+            $user->password = Hash::make($user->phone);
+            $user->save();
+        }
     }
 }

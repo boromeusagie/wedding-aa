@@ -64,7 +64,7 @@
                 <p><img src="images/get-married.png" data-bottom-top="@src:images/get-married.png" height="150" alt=""></p>
                 <div class="row justify-content-center">
                     <div class="col-md-3 gla_round_block profile-name">
-                        <div class="gla_round_im gla_image_bck" data-image="images/app/pasfoto_01.png"></div>
+                        <div class="gla_round_im gla_image_bck" data-image="images/app/groom.jpeg"></div>
                         <h3>Fitrandi Ramadhan</h3>
                         <p class="text-muted">THE FIRST SON OF</p>
                         <p>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 gla_round_block profile-name">
-                        <div class="gla_round_im gla_image_bck" data-image="images/app/pasfoto_02.png"></div>
+                        <div class="gla_round_im gla_image_bck" data-image="images/app/bride.jpeg"></div>
                         <h3>Annisa Fitria Rachim</h3>
                         <p class="text-muted">THE SECOND DAUGHTER OF</p>
                         <p>
@@ -146,8 +146,8 @@
                                 <h4>07.00 - 10.00</h4>
                             </div>
                         </div>
-                        <a href="#" target="_blank">
-                            <img src="images/barcode.jpg" alt="" class="barcode">
+                        <a href="http://bit.ly/NisaAndi" target="_blank">
+                            <img src="images/livestream.png" alt="" class="barcode">
                         </a>
                         <br>
                         <small class="text-white">scan or click for livestream</small>
@@ -184,48 +184,51 @@
 
         </section>
         <!-- section end -->
-        
-        <!-- section -->
-        <section class="gla_section gla_image_bck" data-image="images/back-details.jpg">
-            <div class="layer-filter2"></div>
-            <div class="container text-center">
-                <p><img src="images/ornaments/ornament_0001_centre_B.png" height="110" alt=""></p>
-                <h2>Wedding Details</h2>
-                <h4>Our ceremony and reception will be held at Villa Akira. Located on Megamendung Bogor, it has a beautiful, unobstructed view of the rice field and beautiful village in Puncak.</h4>
-                <div class="row text-center">
-                    <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust2.png"></div>
-                        <h3>Choose Your Food</h3>
-                        <p>    
-                            Food is served full course per person.<br>
-                            Please choose your menu before May 10<sup>th</sup>, 2021.
-                        </p>
-                        <a href="{{ route('order') }}" class="btn">Choose Food</a>
-                    </div>
-                    <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust3.png"></div>
-                        <h3>Here's Your Villa</h3>
-                        <p>
-                            We Provide Villa for  your stay 1 day before our wedding day.
-                            Find your villa details here.
-                        </p>
-                        <a href="#" class="btn">Location</a>
-                    </div>
-                    <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust1.png"></div>
-                        <h3>What to Wear</h3>
-                        <p>
-                            We'd love to see you in you white casual outfit.<br>
-                            We recommend not to wear high heels.
-                        </p>
-                        <a href="{{ route('wear') }}" class="btn">See Guide</a>
+
+        @auth
+            <!-- section -->
+            <section class="gla_section gla_image_bck" data-image="images/back-details.jpg">
+                <div class="layer-filter2"></div>
+                <div class="container text-center">
+                    <p><img src="images/ornaments/ornament_0001_centre_B.png" height="110" alt=""></p>
+                    <h2>Wedding Details</h2>
+                    <h4>Our ceremony and reception will be held at Villa Akira. Located on Megamendung Bogor, it has a beautiful, unobstructed view of the rice field and beautiful village in Puncak.</h4>
+                    <div class="row text-center">
+                        <div class="col-md-4 gla_round_block">
+                            <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust2.png"></div>
+                            <h3>Choose Your Food</h3>
+                            <p>    
+                                Food is served full course per person.<br>
+                                Please choose your menu before May 10<sup>th</sup>, 2021.
+                            </p>
+                            <a href="{{ route('order') }}" class="btn">Choose Food</a>
+                        </div>
+                        <div class="col-md-4 gla_round_block">
+                            <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust3.png"></div>
+                            <h3>Here's Your Villa</h3>
+                            <p>
+                                We Provide Villa for  your stay 1 day before our wedding day.
+                                Find your villa details here.
+                            </p>
+                            <a href="#" class="btn">Location</a>
+                        </div>
+                        <div class="col-md-4 gla_round_block">
+                            <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust1.png"></div>
+                            <h3>What to Wear</h3>
+                            <p>
+                                We'd love to see you in you white casual outfit.<br>
+                                We recommend not to wear high heels.
+                            </p>
+                            <a href="{{ route('wear') }}" class="btn">See Guide</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- container end -->
+                <!-- container end -->
 
-        </section>
-        <!-- section end -->
+            </section>
+            <!-- section end -->
+        @endauth
+
 
         <section class="gla_section gla_image_bck" data-color="#fff">
             

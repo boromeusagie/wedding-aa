@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>Annisa & Andi Wedding Invitation</title>
 
 
@@ -40,6 +41,15 @@
 </head>
 <body class="gla_middle_titles">
 
+<!-- Preloader -->
+<div class="gla_page_loader gla_image_bck" data-color="#f2f2f2">
+    <div class="gla_loader">
+        <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>      
+        <div class="gla_slide_midtitle">Annisa & Andi</div>
+        <p>Loading...</p>
+    </div>
+</div>
+<!-- Preloader End-->
 
 <!-- Page -->
 <div class="gla_page" id="gla_page">
