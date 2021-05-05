@@ -49,6 +49,12 @@
 	    enabled:true
 	  }
 	});
+	$('.lightbox1').magnificPopup({ 
+	  type: 'image',
+	  gallery:{
+	    enabled:true
+	  }
+	});
 	$('.video').magnificPopup({
 	  type: 'iframe',
 	  iframe: {

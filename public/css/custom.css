@@ -1,0 +1,177 @@
+.layer-filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #faf5f2;
+    filter: opacity(0.5);
+    z-index: 2;
+}
+.layer-filter2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #faf5f2;
+    filter: opacity(0.7);
+    z-index: 2;
+}
+
+.gla_round_im {
+    width: 15rem;
+    height: 15rem;
+}
+
+.gla_slider_flower_c1,
+.gla_slider_flower_c2,
+.gla_slider_flower_c3,
+.gla_slider_flower_c4,
+.gla_slider_flower_c5,
+.gla_slider_flower_c6 {
+    z-index: 3;
+}
+
+.gla_content .text-center h3 {
+    font-size: 20px;
+}
+
+.profile-name {
+    padding-bottom: 50px;
+}
+.profile-name > h3 {
+    margin-bottom: 10px;
+}
+.profile-name > p {
+    margin-bottom: 5px;
+}
+.profile-name > p.text-muted {
+    font-size: 12px;
+}
+.gla_footer_social {
+    margin-top: 20px;
+}
+
+.text-center .countdown-section {
+    margin: 0 15px;
+}
+
+.splide {
+    width: 100%;
+    height: 100%;
+}
+
+.splide__track {
+    border-radius: 50%;
+    transform: scale(.95);
+    /* width: 95%;
+    height: 95%; */
+    margin: 10px auto;
+}
+
+.splide__slide {
+    width: 100%;
+    height: auto;
+}
+.splide__arrow--prev {
+    left: 0;
+}
+.splide__arrow--next {
+    right: 0;
+}
+.back-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.up-slider {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+}
+
+.event > h3 {
+    margin-bottom: 10px;
+    font-size: 30px !important;
+}
+
+.time-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+    padding: 5px;
+    border: 2px solid #fff;
+  }
+  .time-box:before, .time-box:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff;
+    line-height: 12px;
+    top: 5px;
+    text-align: center;
+  }
+  .time-box:before {
+    left: 5px;
+  }
+  .time-box:after {
+    right: 5px;
+  }
+  .time-box .inner-time-box {
+    position: relative;
+    border: 2px solid #fff;
+    padding: 10px;
+  }
+  .time-box .inner-time-box:before, .time-box .inner-time-box:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff;
+    line-height: 12px;
+    bottom: -2px;
+    text-align: center;
+  }
+  .time-box .inner-time-box:before {
+    left: -2px;
+  }
+  .time-box .inner-time-box:after {
+    right: -2px;
+  }
+
+.barcode {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+input[type=radio]:checked + label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #090;
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+    border: 1px dashed #444;
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+    transform: 
+        rotateZ(-10deg) 
+        rotateX(10deg);
+}

@@ -134,7 +134,10 @@ html {
 .gla_image_bck {
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
+}
+.mobile .gla_image_bck.gla_home_bg {
+	background-position: top right;
 }
 .gla_top_menu_mobile_link {
 	display: none;
@@ -2448,20 +2451,20 @@ ul.mega-menu {
 			margin-bottom: 20px;
 		}
 			.gla_slide_midtitle {
-				font:900 80px/80px marsha, Arial;
+				font:400 80px/80px 'Cinzel Decorative', cursive;
 				margin-bottom: 30px;
 			}
 			.gla_slide_title b {
 				font-weight: normal!important;
 			}
 			.gla_slide_title span {
-				font:italic 400 80px/80px marsha, Arial!important;
+				font:italic 400 80px/80px 'Cinzel Decorative', cursive;
 			}
 			.gla_slide_midtitle span {
-				font:italic 400 50px/50px marsha, Arial!important;
+				font:italic 400 60px/60px 'Cinzel Decorative', cursive;
 			}
 			.gla_slide_subtitle span {
-				font:italic 400 20px/20px marsha, Arial!important;
+				font:italic 400 20px/20px 'Cinzel Decorative', cursive;
 			}
 		.gla_slide_title_great {
 			font:900 86px Dosis, Arial;
@@ -2517,7 +2520,7 @@ ul.mega-menu {
 	/*05.3 Scroll Down*/
 	.gla_scroll_down {
 		position: absolute;
-		bottom: 40px;
+		bottom: 150px;
 		text-decoration: none;
 		font:italic 400 14px/18px Playfair Display, Arial;
 		color: #333;
@@ -2525,7 +2528,7 @@ ul.mega-menu {
 		left: 50%;
 		margin-left: -20px;
 		text-align: center;
-		z-index: 2;
+		z-index: 3;
 	}
 	.gla_scroll_down:focus, .gla_scroll_down:active {
 		text-decoration: none;
@@ -2707,6 +2710,7 @@ ul.mega-menu {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 	opacity: 1;
+	z-index: 3;
 }
 
 .gla_slider_flower_item {
@@ -2721,12 +2725,20 @@ ul.mega-menu {
 }
 
 .mobile .gla_slider_flower_c1 {
-	left: -200px;
-	top: -200px;		
+	width: 200px;
+	height: 175px;
 }
 .mobile .gla_slider_flower_c2 {
-	right: -200px;
-	top: -200px;		
+	width: 150px;
+	height: 175px;		
+}
+.mobile .gla_slider_flower_c1.gla_testi {
+	left: -100px;
+	top: -75px;
+}
+.mobile .gla_slider_flower_c2.gla_testi {
+	right: -50px;
+	top: -75px;		
 }
 .mobile .gla_slider_flower_c3 {
 	right: -200px;
@@ -2741,7 +2753,8 @@ ul.mega-menu {
 	top: -200px;		
 }
 .mobile .gla_slider_flower_c6 {
-	bottom: -200px;		
+	width: 300px;
+	height: 88px;	
 }
 
 
@@ -2796,7 +2809,7 @@ ul.mega-menu {
 	height: 441px;
 }
 .gla_slider_flower_ii.gla_slider_flower_c5 {
-	background-image: url(../images/flowers_slider/fl2_c5.png);
+	background-image: url(../images/ornaments/fl2_c5.png);
 	width: 500px;
 	height: 171px;
 }
@@ -2844,9 +2857,9 @@ ul.mega-menu {
 	}
 
 .gla_slider_flower_c1 {
-	background: url(../images/flowers_slider/fl1_c1.png);
-	width: 400px;
-	height: 471px;
+	background: url(../images/ornaments/ornament_0005_border_C_top_left.png);
+	width: 320px;
+	height: 275px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
@@ -2859,9 +2872,9 @@ ul.mega-menu {
 	}
 	
 .gla_slider_flower_c2 {
-	background: url(../images/flowers_slider/fl1_c2.png);
-	width: 385px;
-	height: 344px;
+	background: url(../images/ornaments/ornament_0005_border_C_top_right.png);
+	width: 250px;
+	height: 275px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
@@ -2879,8 +2892,8 @@ ul.mega-menu {
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: -150px;
+	bottom: -150px;
 }
 	.active .gla_slider_flower_c3 {
 		right: -300px;
@@ -2893,8 +2906,8 @@ ul.mega-menu {
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
-	left: 0;
-	bottom: 0;
+	left: -150px;
+	bottom: -150px;
 }
 	.active .gla_slider_flower_c4 {
 		bottom: -300px;
@@ -2908,22 +2921,22 @@ ul.mega-menu {
 	background-size: cover;
 	position: absolute;
 	left: 50%;
-	top: 0;
+	top: -100px;
 	transform:translateX(-55%);
 }
 	.active .gla_slider_flower_c5 {
 		top: -300px;
 	}
 .gla_slider_flower_c6 {
-	background: url(../images/flowers_slider/fl1_c6.png);
+	background: url(../images/ornaments/ornament_0006_border_B.png);
 	width: 500px;
-	height: 205px;
+	height: 147px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	transform:translateX(-45%);
+	transform:translateX(-52%);
 }
 	.active .gla_slider_flower_c6 {
 		bottom: -300px;

@@ -18,3 +18,6 @@ Route::get('/', 'HomeController@index')->name('homepage');
 Auth::routes();
 
 Route::get('/home', 'AdminController@index')->name('home');
+
+Route::get('/order', 'MenuController@showMenu')->name('order');
+Route::get('/wear', 'MenuController@showWear')->name('wear');
