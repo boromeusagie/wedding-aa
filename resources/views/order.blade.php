@@ -17,6 +17,7 @@
             </div>
             
             <div class="container">
+                <a href="{{ route('homepage') }}" class="btn mb-3">Back to Home</a>
                 <div class="card text-white transparent">
                     <div class="card-header">
                         <h3 class="card-title text-center">Choose Your Food</h3>
