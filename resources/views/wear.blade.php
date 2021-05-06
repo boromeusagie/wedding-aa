@@ -27,7 +27,8 @@
                         <br>
                         @if ($user->is_mua === null)
                             <p class="text-center font-weight-bold">
-                                Do you want to use MUA?
+                                Do you want to use MUA?<br>
+                                <small class="text-muted">(additional charge for MUA Rp 300.000)</small>
                             </p>
                             <form action="{{ route('mua-store') }}" method="post">
                                 @csrf
