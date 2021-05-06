@@ -306,67 +306,19 @@
             
             
             <div class="container text-center">
-                <h2>The Day They Got Engaged</h2>
-                <p>Andy and Jeska met in university in the Graphic Design program. They both remember each other from orientation, but it wasn’t love at first sight, that’s for sure. Andy remembers Jeska as a ‘snooty art bitch (having been in the visual arts program at the time), and she remembers Andy being an ‘arrogant computer nerd’, boasting his knowledge of Macs over the other students.</p>
-
+                <h2>Nisa and Andi World</h2>
+                
                 <!-- filters -->
                 <div class="button-group filter-button-group">
                     <a data-filter="*">Show All</a>
-                    <a data-filter=".engagement">Engagement</a>
                     <a data-filter=".prewedding">Pre Wedding</a>
+                    <a data-filter=".adventure">Adventure</a>
+                    <a data-filter=".withyou">With You</a>
                 </div>
                 <!-- filters end -->
                 <!-- grid -->
                 <div class="gla_portfolio_no_padding grid">
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/5.jpeg" class="lightbox">
-                                <img src="images/galleries/5.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/9.jpeg" class="lightbox">
-                                <img src="images/galleries/9.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/3.jpeg" class="lightbox">
-                                <img src="images/galleries/3.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/4.jpeg" class="lightbox">
-                                <img src="images/galleries/4.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/7.jpeg" class="lightbox">
-                                <img src="images/galleries/7.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/8.jpeg" class="lightbox">
-                                <img src="images/galleries/8.jpeg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
                     <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
                         <div class="gla_shop_item">
                             <a href="images/galleries/16.jpeg" class="lightbox">
@@ -391,39 +343,15 @@
                         </div>
                     </div>
                     
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item adventure">
                         <div class="gla_shop_item">
                             <a href="images/galleries/20.jpg" class="lightbox">
                                 <img src="images/galleries/20.jpg" alt="">
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/21.jpg" class="lightbox">
-                                <img src="images/galleries/21.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/22.jpg" class="lightbox">
-                                <img src="images/galleries/22.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/23.JPG" class="lightbox">
-                                <img src="images/galleries/23.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/24.JPG" class="lightbox">
                                 <img src="images/galleries/24.JPG" alt="">
@@ -431,47 +359,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/25.JPG" class="lightbox">
-                                <img src="images/galleries/25.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/26.JPG" class="lightbox">
-                                <img src="images/galleries/26.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/27.JPG" class="lightbox">
-                                <img src="images/galleries/27.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/28.JPG" class="lightbox">
-                                <img src="images/galleries/28.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/29.JPG" class="lightbox">
-                                <img src="images/galleries/29.JPG" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item adventure">
                         <div class="gla_shop_item">
                             <a href="images/galleries/30.jpg" class="lightbox">
                                 <img src="images/galleries/30.jpg" alt="">
@@ -487,31 +375,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/32.jpg" class="lightbox">
-                                <img src="images/galleries/32.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/33.jpg" class="lightbox">
-                                <img src="images/galleries/33.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/34.jpg" class="lightbox">
-                                <img src="images/galleries/34.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/35.jpg" class="lightbox">
                                 <img src="images/galleries/35.jpg" alt="">
@@ -519,7 +383,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/36.jpg" class="lightbox">
                                 <img src="images/galleries/36.jpg" alt="">
@@ -527,39 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/37.jpg" class="lightbox">
-                                <img src="images/galleries/37.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/38.jpg" class="lightbox">
-                                <img src="images/galleries/38.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/39.jpg" class="lightbox">
-                                <img src="images/galleries/39.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/40.jpg" class="lightbox">
-                                <img src="images/galleries/40.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/41.jpg" class="lightbox">
                                 <img src="images/galleries/41.jpg" alt="">
@@ -567,7 +399,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/42.jpg" class="lightbox">
                                 <img src="images/galleries/42.jpg" alt="">
@@ -575,7 +407,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item adventure">
                         <div class="gla_shop_item">
                             <a href="images/galleries/43.jpg" class="lightbox">
                                 <img src="images/galleries/43.jpg" alt="">
@@ -583,7 +415,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item adventure">
                         <div class="gla_shop_item">
                             <a href="images/galleries/44.jpg" class="lightbox">
                                 <img src="images/galleries/44.jpg" alt="">
@@ -591,7 +423,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/45.jpg" class="lightbox">
                                 <img src="images/galleries/45.jpg" alt="">
@@ -599,63 +431,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/46.jpg" class="lightbox">
-                                <img src="images/galleries/46.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/47.jpg" class="lightbox">
-                                <img src="images/galleries/47.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/48.jpg" class="lightbox">
-                                <img src="images/galleries/48.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/49.jpg" class="lightbox">
-                                <img src="images/galleries/49.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/50.jpg" class="lightbox">
-                                <img src="images/galleries/50.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/51.jpg" class="lightbox">
-                                <img src="images/galleries/51.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/52.jpg" class="lightbox">
-                                <img src="images/galleries/52.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item withyou">
                         <div class="gla_shop_item">
                             <a href="images/galleries/53.jpg" class="lightbox">
                                 <img src="images/galleries/53.jpg" alt="">
@@ -663,26 +439,10 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/54.jpg" class="lightbox">
-                                <img src="images/galleries/54.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
+                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item adventure">
                         <div class="gla_shop_item">
                             <a href="images/galleries/55.jpg" class="lightbox">
                                 <img src="images/galleries/55.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
-                        <div class="gla_shop_item">
-                            <a href="images/galleries/56.png" class="lightbox">
-                                <img src="images/galleries/56.png" alt="">
                             </a>
                         </div>
                     </div>
