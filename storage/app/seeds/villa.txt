@@ -1,0 +1,7 @@
+Villa Akira,https://goo.gl/maps/CeaAX99iWK3WQJYs9
+Villa Bata Merah,https://goo.gl/maps/S3g6VSoEkRrJGmtC6
+Villa Bata Putih,https://goo.gl/maps/ft9Dq3B5ew4BBtYm9
+Villa Batu Tua,https://goo.gl/maps/e4Cn9mpvEQkRSJSQ9
+Villa Bumi Elok,https://goo.gl/maps/ho8e2UiVv2zprsok8
+Villa Bumi Elok Pondok 1,https://goo.gl/maps/ho8e2UiVv2zprsok8
+Villa Bumi Elok Pondok 2,https://goo.gl/maps/ho8e2UiVv2zprsok8
