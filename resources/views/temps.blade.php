@@ -4,11 +4,13 @@
     <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
 
     <!-- Music -->
-    <div class="gla_music_icon">
-        <i class="ti ti-music"></i>
-    </div>
+    <button class="gla_music_icon icon-music" id="iconMusic">
+        <i class="ti ti-control-pause"></i>
+    </button>
     <div class="gla_music_icon_cont">
-        <audio src="music/song.mp3" autoplay loop></audio>
+        <audio id="audioMusic" autoplay loop>
+            <source src="music/song.mp3" type="audio/mpeg">
+        </audio>
         {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281560352&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe> --}}
         {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> --}}
     </div>
@@ -83,16 +85,49 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="images/app/slide1.jpeg">
+                                        <img src="images/app/slide/1.jpeg">
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="images/app/slide2.jpeg">
+                                        <img src="images/app/slide/2.jpeg">
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="images/app/slide3.jpeg">
+                                        <img src="images/app/slide/3.jpeg">
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="images/app/slide4.jpeg">
+                                        <img src="images/app/slide/4.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/5.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/6.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/7.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/8.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/9.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/10.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/11.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/12.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/13.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/14.jpeg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="images/app/slide/15.jpeg">
                                     </li>
                                 </ul>
                             </div>
@@ -308,6 +343,13 @@
             
             <div class="container text-center">
                 <h2>Nisa and Andi World</h2>
+                <p>Nisa and Andi started dating 5 years ago, they went to goods and the bads, near and far (Bandung Solo here we go!). 
+                    Nisa hates when Andi ignore her ( Wololoo.. game all night long). 
+                    Andi hates nisa when she try to micro manage everything. 
+                    But in the end Nisa meant the world to Andi, and vice versa. 
+                    They love the sea. They love Adventure. Especially with friends and family (Raja Ampat anyone?). 
+                    Anyhow they'd love you to be at our celebration together. Cheers! See you guys.
+                </p>
                 
                 <!-- filters -->
                 {{-- <div class="button-group filter-button-group">
@@ -330,8 +372,8 @@
                     
                     <div class="col-sm-4 col-xs-6 gla_anim_box grid-item prewedding">
                         <div class="gla_shop_item">
-                            <a href="images/galleries/18.jpeg" class="lightbox">
-                                <img src="images/galleries/18.jpeg" alt="">
+                            <a href="images/galleries/57.jpeg" class="lightbox">
+                                <img src="images/galleries/57.jpeg" alt="">
                             </a>
                         </div>
                     </div>
@@ -536,12 +578,27 @@
 
 @section('script')
 <script>
-    new Splide('#image-slider', {
-        autoplay: true,
-        interval: 2500,
-        rewind: true,
-        pagination: false,
-        type: 'fade'
-    }).mount();
+    $(function() {
+        new Splide('#image-slider', {
+            autoplay: true,
+            interval: 2500,
+            rewind: true,
+            pagination: false,
+            type: 'fade'
+        }).mount();
+    
+        var button = document.getElementById("iconMusic");
+        var audio = document.getElementById("audioMusic");
+    
+        button.addEventListener("click", function(){
+        if(audio.paused){
+            audio.play();
+            button.innerHTML = `<i class="ti ti-control-pause"></i>`;
+        } else {
+            audio.pause();
+            button.innerHTML = `<i class="ti ti-control-play"></i>`;
+        }
+        });
+    });
 </script>
 @endsection
