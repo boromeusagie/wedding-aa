@@ -8,7 +8,7 @@
         <i class="ti ti-control-pause"></i>
     </button>
     <div class="gla_music_icon_cont">
-        <audio id="audioMusic" loop>
+        <audio id="audioMusic" autoplay loop>
             <source src="music/song.mp3" type="audio/mpeg">
         </audio>
 
