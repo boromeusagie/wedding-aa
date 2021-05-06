@@ -14,7 +14,7 @@ class VillaSeeder extends Seeder
      */
     public function run()
     {
-        $file = storage_path('app\seeds\villa.txt');
+        $file = storage_path('app/seeds/villa.txt');
 
         Excel::import(new VillaImport, $file);
     }
