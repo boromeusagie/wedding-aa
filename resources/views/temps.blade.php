@@ -309,12 +309,12 @@
                 <h2>Nisa and Andi World</h2>
                 
                 <!-- filters -->
-                <div class="button-group filter-button-group">
+                {{-- <div class="button-group filter-button-group">
                     <a data-filter="*">Show All</a>
                     <a data-filter=".prewedding">Pre Wedding</a>
                     <a data-filter=".adventure">Adventure</a>
                     <a data-filter=".withyou">With You</a>
-                </div>
+                </div> --}}
                 <!-- filters end -->
                 <!-- grid -->
                 <div class="gla_portfolio_no_padding grid">
