@@ -8,7 +8,7 @@
         <i class="ti ti-music"></i>
     </div>
     <div class="gla_music_icon_cont">
-        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281560352&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281560352&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
         {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> --}}
     </div>
 
