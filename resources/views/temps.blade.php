@@ -8,10 +8,10 @@
         <i class="ti ti-control-pause"></i>
     </button>
     <div class="gla_music_icon_cont">
-        <audio id="audioMusic" autoplay loop>
+        <audio id="audioMusic" loop>
             <source src="music/song.mp3" type="audio/mpeg">
         </audio>
-        
+
         {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281560352&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe> --}}
         {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> --}}
     </div>
@@ -78,6 +78,9 @@
                         <div class="gla_footer_social">
                             <a href="https://www.instagram.com/fitrandir/" target="_blank">
                                 <i class="ti ti-instagram gla_icon_box"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCH3cJlIOfATy7VK_p7KMkrw" target="_blank">
+                                <i class="ti ti-youtube gla_icon_box"></i>
                             </a>
                         </div>
                     </div>
@@ -228,7 +231,8 @@
                 <div class="layer-filter2"></div>
                 <div class="container text-center">
                     <p><img src="images/ornaments/ornament_0001_centre_B.png" height="110" alt=""></p>
-                    <h2>Wedding Details</h2>
+                    <h2 style="margin-bottom: 10px;">Things to Note</h2>
+                    <h3>IMPORTANT</h3>
                     <h4>Our ceremony and reception will be held at Villa Akira. Located on Megamendung Bogor, it has a beautiful, unobstructed view of the rice field and beautiful village in Puncak.</h4>
                     <div class="row text-center">
                         @if ($user->is_order === '1')
@@ -242,19 +246,19 @@
                                 @if ($checkMenu)
                                     <p class="font-italic">Already Submit!</p>
                                 @else
-                                    <a href="{{ route('order') }}" class="btn">Choose Food</a>
+                                    <a href="{{ route('order') }}" class="btn btn-animated">Choose Food</a>
                                 @endif
                             </div>
                         @endif
                         @if ($user->villa != null)
                             <div class="col-md-4 gla_round_block">
                                 <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust3.png"></div>
-                                <h3>Here's Your Villa</h3>
+                                <h3>Your Villa</h3>
                                 <p>
                                     We Provide Villa for  your stay 1 day before our wedding day.
-                                    You will stay in {{ $villa->villa_name }}.
+                                    You will stay in <b>{{ $villa->villa_name }}</b>.
                                 </p>
-                                <a href="{{ $villa->location }}" target="_blank" class="btn">Location</a>
+                                <a href="{{ $villa->location }}" target="_blank" class="btn btn-animated">Location</a>
                             </div>
                         @endif
                         <div class="col-md-4 gla_round_block">
@@ -264,7 +268,7 @@
                                 We'd love to see you in you white casual outfit.<br>
                                 We recommend not to wear high heels.
                             </p>
-                            <a href="{{ route('wear') }}" class="btn">See Guide</a>
+                            <a href="{{ route('wear') }}" class="btn btn-animated">See Guide</a>
                         </div>
                     </div>
                 </div>
@@ -344,8 +348,8 @@
             
             <div class="container text-center">
                 <h2>Nisa and Andi World</h2>
-                <p>Nisa and Andi started dating 5 years ago, they went to goods and the bads, near and far (Bandung Solo here we go!). 
-                    Nisa hates when Andi ignore her ( Wololoo.. game all night long). 
+                <p>Nisa and Andi started dating 5 years ago, they went to goods and the bads, near and far (Bandung Solo not a problem!). 
+                    Nisa hates when Andi ignore her ( Wololooo.. game all night long). 
                     Andi hates nisa when she try to micro manage everything. 
                     But in the end Nisa meant the world to Andi, and vice versa. 
                     They love the sea. They love Adventure. Especially with friends and family (Raja Ampat anyone?). 
