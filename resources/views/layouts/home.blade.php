@@ -45,13 +45,15 @@
 <!-- Preloader -->
 <div class="gla_page_loader gla_image_bck" data-color="#f2f2f2">
     <div class="gla_loader">
-        @auth
-            <div class="gla_slide_midtitle">Welcome {{ $user->name }}</div>
-        @else
-            <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>  
-            <div class="gla_slide_midtitle">Annisa & Andi</div>
-        @endauth  
-        <p>Loading...</p>
+        <div class="container">
+            @auth
+                <div class="gla_slide_midtitle">Welcome {{ $user->name }}</div>
+            @else
+                <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>  
+                <div class="gla_slide_midtitle">Annisa & Andi</div>
+            @endauth  
+            <p>Loading...</p>
+        </div>
     </div>
 </div>
 <!-- Preloader End-->
