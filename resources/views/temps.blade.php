@@ -348,12 +348,13 @@
             
             <div class="container text-center">
                 <h2>Nisa and Andi World</h2>
-                <p>Nisa and Andi started dating 5 years ago, they went to goods and the bads, near and far (Bandung Solo not a problem!). 
-                    Nisa hates when Andi ignore her ( Wololooo.. game all night long). 
-                    Andi hates nisa when she try to micro manage everything. 
-                    But in the end Nisa meant the world to Andi, and vice versa. 
-                    They love the sea. They love Adventure. Especially with friends and family (Raja Ampat anyone?). 
-                    Anyhow they'd love you to be at our celebration together. Cheers! See you guys.
+                <p>Nisa and Andi started dating 5 years ago, they went to goods and the bads, 
+                    near and far (Bandung Solo not a problem!). Nisa hates when Andi ignore her 
+                    ( Wololooo.. game all night long). Andi hates nisa when she try to micro manage 
+                    everything since procrastinate is Andi's middle name. But in the end Nisa meant 
+                    the world to Andi, and vice versa. They love the sea. They love Adventure. 
+                    Especially with friends and family (Raja Ampat anyone?). Anyhow they'd love you to 
+                    be at our celebration together. Cheers! See you guys.
                 </p>
                 
                 <!-- filters -->
