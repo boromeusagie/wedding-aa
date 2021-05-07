@@ -21,7 +21,7 @@
                 <div class="card text-white transparent">
                     <div class="card-header">
                         <h3 class="card-title text-center">Choose Your Food</h3>
-                        <p class="text-center">(click image for choose)</p>
+                        <p class="text-center">(click image below to choose)</p>
                     </div>
                     <div class="card-body">
                         <form id="formMenu" action="{{ route('order-post') }}" method="post">

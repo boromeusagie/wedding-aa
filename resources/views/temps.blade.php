@@ -7,14 +7,10 @@
     <button class="gla_music_icon icon-music" id="iconMusic">
         <i class="ti ti-control-pause"></i>
     </button>
-    <div class="gla_music_icon_cont">
-        <audio id="audioMusic" autoplay loop>
-            <source src="music/song.mp3" type="audio/mpeg">
-        </audio>
-
-        {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281560352&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe> --}}
-        {{-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108238095&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> --}}
-    </div>
+    
+    <audio id="audioMusic" autoplay loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
 
 
     <!-- Slider -->
@@ -234,7 +230,7 @@
                     <h2 style="margin-bottom: 10px;">Things to Note</h2>
                     <h3>IMPORTANT</h3>
                     <h4>Our ceremony and reception will be held at Villa Akira. Located on Megamendung Bogor, it has a beautiful, unobstructed view of the rice field and beautiful village in Puncak.</h4>
-                    <div class="row text-center">
+                    <div class="row text-center justify-content-center">
                         @if ($user->is_order === '1')
                             <div class="col-md-4 gla_round_block">
                                 <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust2.png"></div>
@@ -286,7 +282,7 @@
             <div class="container text-center">
 
                 <h2>Health Protocol</h2>
-                <h3 class="gla_subtitle">Help prevent the spread of respiratory desease like COVID-19</h3>
+                <h3 class="gla_subtitle">Help prevent the spread of respiratory disease like COVID-19</h3>
 
                 <!-- icon boxes -->
                 <div class="gla_icon_boxes row">
