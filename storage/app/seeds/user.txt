@@ -1,16 +1,15 @@
-dummy,1234,,1,1
 Wisnu Saputra,08998040494,Villa Akira,1,1
 Adi Kurniawan,089604976948,Villa Akira,1,2
 Agnesia Erlita Zoraya,081282841870,Villa Akira,1,3
 Bianingrum,081210041048,Villa Akira,1,4
 Iga Dwi Yulita,082159595167,Villa Akira,1,5
 Retno Astari Wasito,081240958995,Villa Akira,1,6
-Cipoxx,085624814215,Villa Bata Putih,1,7
-Ryan,081320576458,Villa Bata Putih,1,8
-Wicak,087838020037,Villa Bata Putih,1,9
+Chairul Ichsan,085624814215,Villa Bata Putih,1,7
+Ryan Rheinadi,081320576458,Villa Bata Putih,1,8
+Ardian Wicaksana,087838020037,Villa Bata Putih,1,9
 Lukman Maulana,087873152133,Villa Bata Merah,1,10
 Aziez Nugroho,081215102896,Villa Bata Putih,1,11
-Opik,08112226266,Villa Bata Putih,1,12
+Taufik Harisman,08112226266,Villa Bata Putih,1,12
 Aisha Kurniasari,08111951196,Villa Akira,1,14
 Muhammad Arif Rahman,08119891645,Villa Akira,1,15
 Rifol Sartuni,0811133289,Villa Akira,1,17
@@ -25,17 +24,17 @@ Cilhardianto Satriawan,082131638069,Villa Bata Merah,1,33
 Karina Zakia,082244404330,Villa Bata Merah,1,34
 Barlian Farida Ajeng Putri,087785682000,,1,35
 Guntario Sukma Cahyani,08112240047,Villa Bata Putih,1,36
-Tezza,085271295984,,1,37
+Tezza Lantika Riyanto,085271295984,,1,37
 Jonathan Ery Pradana,08112766740,Villa Bata Merah,1,38
-Dennice,081322273765,Villa Bata Putih,1,39
+Dennice Herpudyo,081322273765,Villa Bata Putih,1,39
 Araminta Setyawati,082232112009,,1,40
 Kezia Yemima Tuju,081296219656,Villa Bata Putih,1,41
 Maulana Abdullah,08118821733,,1,42
 Rio Eka Putra,081363166546,Villa Bata Merah,1,43
-Dedek,08986948214,Villa Bata Merah,1,44
+Amral Nazar,08986948214,Villa Bata Merah,1,44
 Rahmat Alfianto,085722249078,Villa Bata Merah,1,45
-Agie,081313167093,Villa Akira,1,46
-Manda,089602613254,Villa Akira,1,47
+Boromeus Agie,081313167093,Villa Akira,1,46
+Amanda Dina Erika,089602613254,Villa Akira,1,47
 Rika Mandasari,081297787661,Villa Bata Merah,1,48
 Mang Amu,081299100063,Villa Batu Tua,1,49
 Cil Yustin,081281161117,Villa Batu Tua,1,50
