@@ -30,9 +30,8 @@
                         @csrf
                         <div class="row text-center justify-content-md-center">
                             <div class="col-md-auto">
-                                <label>Please input your phone number<br>
-                                    (for authentication purpose)<br>
-                                    Don't worry we won't sell your data
+                                <label>
+                                    Please login with phone number.
                                 </label>
                                 <input type="text" name="username" class="form-control form-opacity" value="{{ $username }}" hidden>
                                 <input type="text" name="password" class="form-control form-opacity @error('password') is-invalid @enderror">

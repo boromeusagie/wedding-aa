@@ -94,9 +94,6 @@
                                         <img src="images/app/slide/5.jpeg">
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="images/app/slide/10.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
                                         <img src="images/app/slide/11.jpeg">
                                     </li>
                                     <li class="splide__slide">
@@ -104,9 +101,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <img src="images/app/slide/13.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/15.jpeg">
                                     </li>
                                 </ul>
                             </div>
