@@ -8,7 +8,6 @@
     <div class="gla_slider_flower">
         <div class="gla_slider_flower_c1 gla_slider_flower_item"></div>
        <div class="gla_slider_flower_c2 gla_slider_flower_item"></div>
-       <div class="gla_slider_flower_c6 gla_slider_flower_item"></div>
    </div>
 
     <!-- Over -->
