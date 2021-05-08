@@ -15,7 +15,7 @@ Muhammad Arif Rahman,08119891645,Villa Akira,1,15,muhammad-arif-rahman
 Rifol Sartuni,0811133289,Villa Akira,1,17,rifol-sartuni
 Dewi Taviana Walida,081290040065,Villa Akira,1,18,dewi-taviana-walida
 Abu Bakar Abdul Karim Al-Mukmin,081216359760,Villa Akira,1,19,abu-bakar-abdul-karim-al-mukmin
-Ibrahim Shaquille Abdul Karim,123456,Villa Akira,1,20,ibrahim-shaquille-abdul-karim
+Ibrahim Shaquille Abdul Karim,0123456,Villa Akira,1,20,ibrahim-shaquille-abdul-karim
 Arlin Sifana,082133292173,Villa Akira,1,21,arlin-sifana
 Siti Rahma,085217192655,Villa Akira,1,22,siti-rahma
 Iriano Haroen,081381481511,Villa Akira,1,23,iriano-haroen
@@ -26,7 +26,7 @@ Afina Azizah,082119463203,Villa Bata Putih,1,28,afina-azizah
 Aditya Afit Pratama,082122433863,Villa Bata Putih,1,29,aditya-afit-pratama
 Nabila Akmalita Khairul Islam,081290349506,,1,30,nabila-akmalita-khairul-islam
 Iqbal M Pradana,081330150153,Villa Bata Putih,1,31,iqbal-m-pradana
-XXX,12345678,,1,32,xxx
+XXX,012345678,,1,32,xxx
 Cilhardianto Satriawan,082131638069,Villa Bata Merah,1,33,cilhardianto-satriawan
 Karina Zakia,082244404330,Villa Bata Putih,1,34,karina-zakia
 Barlian Farida Ajeng Putri,087785682000,,1,35,barlian-farida-ajeng-putri
