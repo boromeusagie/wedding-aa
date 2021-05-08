@@ -18,8 +18,7 @@ class UserImport implements ToCollection
                 [
                     'name' => $row[0],
                     'username' => $row[5],
-                    'phone' => $row[1],
-                    'password' => Hash::make($row[1]),
+                    'phone' => preg_replace("/\r|\n/", "", $row[1]),
                     'villa' => $row[2],
                     'no_table' => $row[4],
                     'is_order' => $row[3]
