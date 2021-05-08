@@ -3,14 +3,14 @@
 @section('content')
     <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
 
-    <!-- Music -->
+    {{-- <!-- Music -->
     <button class="gla_music_icon icon-music" id="iconMusic">
         <i class="ti ti-control-pause"></i>
     </button>
     
     <audio id="audioMusic" autoplay loop>
         <source src="music/song.mp3" type="audio/mpeg">
-    </audio>
+    </audio> --}}
 
 
     <!-- Slider -->
@@ -85,12 +85,6 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="images/app/slide/1.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/2.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
                                         <img src="images/app/slide/3.jpeg">
                                     </li>
                                     <li class="splide__slide">
@@ -98,18 +92,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <img src="images/app/slide/5.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/6.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/7.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/8.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/9.jpeg">
                                     </li>
                                     <li class="splide__slide">
                                         <img src="images/app/slide/10.jpeg">
@@ -122,9 +104,6 @@
                                     </li>
                                     <li class="splide__slide">
                                         <img src="images/app/slide/13.jpeg">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="images/app/slide/14.jpeg">
                                     </li>
                                     <li class="splide__slide">
                                         <img src="images/app/slide/15.jpeg">

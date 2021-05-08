@@ -47,7 +47,9 @@
     <div class="gla_loader">
         <div class="container">
             @auth
-                <div class="gla_slide_midtitle">Welcome {{ $user->name }}</div>
+                <div class="gla_slide_midtitle">Welcome<br>
+                    {{ $user->name }}
+                </div>
             @else
                 <p><img src="images/animations/ourwedding_st.gif" height="150" alt=""></p>  
                 <div class="gla_slide_midtitle">Annisa & Andi</div>
