@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Exports\UserExport;
 use App\Menu;
 use App\Villa;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
@@ -57,5 +60,12 @@ class HomeController extends Controller
 
         toastr()->success('Your wish has been added.');
         return redirect()->route('homepage');
+    }
+
+    public function download()
+    {
+        $now = Carbon::now();
+        $date = date('d-m-Y', strtotime($now));
+        return Excel::download(new UserExport, 'user-download-'.$date.'-.xlsx');
     }
 }
