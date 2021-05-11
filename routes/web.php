@@ -22,5 +22,6 @@ Route::get('/order', 'MenuController@showMenu')->name('order');
 Route::post('/order', 'MenuController@orderMenu')->name('order-post');
 Route::post('/mua', 'MenuController@storeMua')->name('mua-store');
 Route::get('/wear', 'MenuController@showWear')->name('wear');
+Route::get('/user-excel-export', 'HomeController@download')->name('user.export');
 Route::get('/{username}', 'Auth\LoginController@loginForm')->name('login.show');
 
