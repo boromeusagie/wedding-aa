@@ -18,8 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         $comments = Comment::orderBy('created_at', 'desc')
-            ->take(5)
-            ->get();
+		->get();
         if (Auth::check()) {
             $user = Auth::user();
             $menuUser = Menu::where('user_id', $user->id)->get();
