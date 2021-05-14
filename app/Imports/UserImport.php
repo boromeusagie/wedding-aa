@@ -17,7 +17,7 @@ class UserImport implements ToCollection
                 ['phone' => $row[1]],
                 [
                     'name' => $row[0],
-                    'username' => $row[5],
+                    'username' => $row[5] != null ? $row[5] : str_slug($row[0], '-'),
                     'phone' => preg_replace("/\r|\n/", "", $row[1]),
                     'villa' => $row[2],
                     'no_table' => $row[4],

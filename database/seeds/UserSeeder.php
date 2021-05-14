@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $file = storage_path('app/seeds/addUser.txt');
+        $file = storage_path('app/seeds/new_user.txt');
 
         Excel::import(new UserImport, $file);
 

@@ -1,6 +1,6 @@
 @extends('admin.layout.app')
 
-@section('page_title', 'Comments')
+@section('page_title', 'Users')
 
 @section('content')
 <div class="card">
@@ -28,6 +28,7 @@
             <th>No</th>
             <th>Name</th>
             <th>Username</th>
+            <th>Phone</th>
             <th>Order Menu</th>
             <th>Trip</th>
             <th>Table</th>
@@ -40,7 +41,8 @@
                 <td>{{ $index + 1 }}</td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->username }}</td>
-                <td>{{ $item->is_order }}</td>
+                <td>{{ $item->phone }}</td>
+                <td>{{ $item->is_order === '1' ? 'Yes' : 'No' }}</td>
                 <td>{{ $item->no_table === '-1' ? '2' : '1' }}</td>
                 <td>{{ $item->no_table }}</td>
                 <td>
@@ -96,7 +98,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <form name="deleteItem" class="delete-item">
+          <form name="deleteItem" class="delete-item" method="post">
             @csrf
             @method('delete')
             <button type="submit" class="btn btn-danger">Delete</button>

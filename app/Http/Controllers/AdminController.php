@@ -27,6 +27,9 @@ class AdminController extends Controller
     public function dashboard()
     {
         $user = Auth::user();
+        if ($user->username != 'admin') {
+            abort(404);
+        }
         return view('admin.dashboard', ['user' => $user]);
     }
 
@@ -43,6 +46,9 @@ class AdminController extends Controller
 
         $user = Auth::user();
 
+        if ($user->username != 'admin') {
+            abort(404);
+        }
         $ppg = (int) ($filter['perPage'] ?? 10);
         $sort = $filter['sort'] ?? 'asc';
         $users = User::whereNotIn('username', ['admin'])
@@ -73,6 +79,10 @@ class AdminController extends Controller
 
         $user = Auth::user();
 
+        if ($user->username != 'admin') {
+            abort(404);
+        }
+        
         $ppg = (int) ($filter['perPage'] ?? 10);
         $sort = $filter['sort'] ?? 'asc';
         $comments = Comment::orderBy('created_at', $sort)->paginate($ppg);
