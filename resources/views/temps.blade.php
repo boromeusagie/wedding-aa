@@ -219,7 +219,7 @@
                                 @endif
                             </div>
                         @endif
-                        @if ($user->villa != null)
+                        @if ($user->villa != null || $user->villa != '')
                             <div class="col-md-4 gla_round_block">
                                 <div class="gla_round_im gla_image_bck" data-image="images/assets/ilust3.png"></div>
                                 <h3>Your Villa</h3>
