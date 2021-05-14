@@ -32,6 +32,7 @@
             <th>Order Menu</th>
             <th>Trip</th>
             <th>Table</th>
+            <th>MUA</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -45,6 +46,7 @@
                 <td>{{ $item->is_order === '1' ? 'Yes' : 'No' }}</td>
                 <td>{{ $item->no_table === '-1' ? '2' : '1' }}</td>
                 <td>{{ $item->no_table != '-1' ? $item->no_table : '-' }}</td>
+                <td>{{ $item->is_mua }}</td>
                 <td>
                     <div class="btn-group">
                         <button type="button" data-toggle="modal" data-target="#deleteItem" data-name="{{ $item->name }}" data-id="{{ $item->id }}" class="btn btn-sm text-danger" title="Delete">
@@ -122,7 +124,7 @@
         url = url.replace(':id', idItem)
         
         var modal = $(this)
-        modal.find('.modal-text').text('Are you sure delete comment from "' + name + '"?')
+        modal.find('.modal-text').text('Are you sure delete user "' + name + '"?')
         
         document.deleteItem.action = get_action();
 
