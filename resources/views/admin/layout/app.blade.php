@@ -165,6 +165,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
           <li class="nav-item">
+            <a href="{{ route('admin-menu') }}" class="nav-link {{ Route::is('admin-menu') ? 'active' : null }}">
+              <i class="nav-icon fas fa-utensils"></i>
+              <p>
+                Orders
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{{ route('admin-comment') }}" class="nav-link {{ Route::is('admin-comment') ? 'active' : null }}">
               <i class="nav-icon fas fa-comment-alt"></i>
               <p>

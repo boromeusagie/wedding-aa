@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Comment;
+use App\Menu;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -66,6 +67,38 @@ class AdminController extends Controller
             ]);
     }
 
+    public function orderIndex(Request $request)
+    {
+        $request->validate(
+            [
+                'perPage' => 'nullable|integer',
+                'sort' => 'nullable|string'
+            ]
+        );
+
+        $filter = $request->all();
+
+        $user = Auth::user();
+
+        if ($user->username != 'admin') {
+            abort(404);
+        }
+        $ppg = (int) ($filter['perPage'] ?? 10);
+        $sort = $filter['sort'] ?? 'asc';
+        $menus = Menu::orderBy('created_at', $sort)->paginate($ppg);
+        
+        $totalItems = Menu::all()->count();
+
+        return view('admin.order',
+            [
+                'menus' => $menus,
+                'ppg' => $ppg,
+                'sort' => $sort,
+                'totalItems' => $totalItems,
+                'user' => $user
+            ]);
+    }
+
     public function commentIndex(Request $request)
     {
         $request->validate(
@@ -82,7 +115,7 @@ class AdminController extends Controller
         if ($user->username != 'admin') {
             abort(404);
         }
-        
+
         $ppg = (int) ($filter['perPage'] ?? 10);
         $sort = $filter['sort'] ?? 'asc';
         $comments = Comment::orderBy('created_at', $sort)->paginate($ppg);

@@ -30,6 +30,7 @@ Route::group([
 ], function() {
     Route::get('', 'AdminController@dashboard')->name('admin-dashboard');
     Route::get('user', 'AdminController@userIndex')->name('admin-user');
+    Route::get('menu', 'AdminController@orderIndex')->name('admin-menu');
     Route::get('comment', 'AdminController@commentIndex')->name('admin-comment');
     Route::delete('comment/{id}/delete', 'AdminController@commentDelete')->name('admin-comment-delete');
 });
