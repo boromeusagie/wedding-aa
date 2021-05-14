@@ -90,9 +90,7 @@ class AdminController extends Controller
         $user->username = $request->username;
         $user->phone = $request->phone;
         $user->is_order = $request->is_order;
-        if ($user->phone != $request->phone) {
-            $user->password = Hash::make($request->phone);
-        }
+        $user->password = Hash::make($request->phone);
         $user->save();
 
         toastr()->success('User has been updated');
