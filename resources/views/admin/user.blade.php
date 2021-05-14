@@ -22,6 +22,9 @@
           </div>
         </form>
       </div>
+      <div class="float-right mt-3 mr-3">
+        <button type="button" data-toggle="modal" data-target="#addItem" class="btn btn-primary" id="addUser">+ Add User</button>
+      </div>
       <table class="table table-striped p-0">
         <thead>
           <tr>
@@ -91,6 +94,92 @@
 @endsection
 
 @section('modal')
+  <div class="modal fade" id="addItem">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add User</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form name="addItem" method="post">
+          <div class="modal-body">
+            @csrf
+            <div class="form-group row">
+              <label for="newName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="name" id="newName">
+                  @error('name')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="newUsername" class="col-sm-2 col-form-label">Username</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="username" id="newUsername">
+                  @error('username')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="newPhone" class="col-sm-2 col-form-label">Phone</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="phone" id="newPhone">
+                  @error('phone')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2">Order Menu</label>
+              <div class="col-sm-10 m-0 p-0">
+                <select name="is_order" id="is_order">
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2">Villa</label>
+              <div class="col-sm-10 m-0 p-0">
+                <select name="villa" id="villa">
+                  <option value="">No Villa</option>
+                  <option value="Villa Akira">Villa Akira</option>
+                  <option value="Villa Bata Merah">Villa Bata Merah</option>
+                  <option value="Villa Bata Putih">Villa Bata Putih</option>
+                  <option value="Villa Batu Tua">Villa Batu Tua</option>
+                  <option value="Villa Bumi Elok">Villa Bumi Elok</option>
+                  <option value="Villa Bumi Elok Pondok 1">Villa Bumi Elok Pondok 1</option>
+                  <option value="Villa Bumi Elok Pondok 2">Villa Bumi Elok Pondok 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="newNoTable" class="col-sm-2 col-form-label">No. Table</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="no_table" value="-1" id="newNoTable">
+                  <span class="text-muted">Fill "-1" if doesn't have no. table</span>
+                  @error('no_table')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
   <div class="modal fade" id="updateItem">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -166,6 +255,7 @@
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
+
   <div class="modal fade" id="deleteItem">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -196,6 +286,19 @@
 
 @section('scripts')
     <script>
+      $('#addItem').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        let url = "{{ route('admin-user-store') }}"
+        
+        var modal = $(this)
+        
+        document.updateItem.action = get_action();
+
+        function get_action() {
+          return url;
+        }
+      })
+
       $('#updateItem').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget)
         var name = button.data('name')

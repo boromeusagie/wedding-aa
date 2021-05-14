@@ -68,6 +68,38 @@ class AdminController extends Controller
             ]);
     }
 
+    public function userStore(Request $request)
+    {
+        $customMessages = [
+            'required' => 'Enter :attribute',
+            'unique' => 'This :attribute has been used'
+        ];
+
+        $request->validate(
+            [
+                'name' => 'required|string',
+                'username' => 'required|string',
+                'phone' => 'required|unique:users,phone|string',
+                'is_order' => 'required|string',
+                'no_table' => 'required|string'
+            ], $customMessages
+        );
+
+        $user = new User();
+
+        $user->name = $request->name;
+        $user->username = $request->username;
+        $user->phone = $request->phone;
+        $user->is_order = $request->is_order;
+        $user->villa = $request->villa;
+        $user->no_table = $request->no_table;
+        $user->password = Hash::make($request->phone);
+        $user->save();
+
+        toastr()->success('User has been created');
+        return redirect()->route('admin-user');
+    }
+
     public function userUpdate(Request $request, $id)
     {
         $customMessages = [

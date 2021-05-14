@@ -30,6 +30,7 @@ Route::group([
 ], function() {
     Route::get('', 'AdminController@dashboard')->name('admin-dashboard');
     Route::get('user', 'AdminController@userIndex')->name('admin-user');
+    Route::post('user', 'AdminController@userStore')->name('admin-user-store');
     Route::post('user/{id}/update', 'AdminController@userUpdate')->name('admin-user-update');
     Route::delete('user/{id}/delete', 'AdminController@userDelete')->name('admin-user-delete');
     Route::get('menu', 'AdminController@orderIndex')->name('admin-menu');
