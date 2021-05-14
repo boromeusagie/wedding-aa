@@ -72,7 +72,7 @@
                 <option value="{{ $totalItems }}" {{ $ppg === $totalItems ? 'selected' : null }}>All</option>
               </select>
             </div>
-            <p class="col-sm m-0 pl-1">of {{ $totalItems }}</p>
+            <p class="col-sm m-0 pl-1">of {{ $totalItems - 1 }}</p>
           </div>
         </form>
       </div>
