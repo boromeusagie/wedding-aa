@@ -7,6 +7,7 @@ use App\Menu;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -65,6 +66,37 @@ class AdminController extends Controller
                 'totalItems' => $totalItems,
                 'user' => $user
             ]);
+    }
+
+    public function userUpdate(Request $request, $id)
+    {
+        $customMessages = [
+            'required' => 'Enter :attribute',
+            'unique' => 'This :attribute has been used'
+        ];
+
+        $request->validate(
+            [
+                'name' => 'required|string',
+                'username' => 'required|string',
+                'phone' => 'required|unique:users,phone,'.$id.'|string',
+                'is_order' => 'required|string'
+            ], $customMessages
+        );
+
+        $user = User::findOrFail($id);
+
+        $user->name = $request->name;
+        $user->username = $request->username;
+        $user->phone = $request->phone;
+        $user->is_order = $request->is_order;
+        if ($user->phone != $request->phone) {
+            $user->password = Hash::make($request->password);
+        }
+        $user->save();
+
+        toastr()->success('User has been updated');
+        return redirect()->route('admin-user');
     }
 
     public function orderIndex(Request $request)
@@ -130,6 +162,15 @@ class AdminController extends Controller
                 'totalItems' => $totalItems,
                 'user' => $user
             ]);
+    }
+
+    public function userDelete(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+        $user->delete();
+
+        toastr()->success('User has been deleted');
+        return redirect()->route('admin-user');
     }
 
     public function commentDelete(Request $request, $id)
