@@ -91,7 +91,7 @@ class AdminController extends Controller
         $user->phone = $request->phone;
         $user->is_order = $request->is_order;
         if ($user->phone != $request->phone) {
-            $user->password = Hash::make($request->password);
+            $user->password = Hash::make($request->phone);
         }
         $user->save();
 
