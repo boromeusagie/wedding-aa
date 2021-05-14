@@ -1,0 +1,107 @@
+Wisnu Saputra,08998040494,Villa Akira,1,1,wisnu-saputra
+Adi Kurniawan,089604976948,Villa Akira,1,2,adi-kurniawan
+Agnesia Erlita Zoraya,081282841870,Villa Akira,1,3,agnesia-erlita-zoraya
+Bianingrum,081210041048,Villa Akira,1,4,bianingrum
+Iga Dwi Yulita,082159595167,Villa Akira,1,5,iga-dwi-yulita
+Retno Astari Wasito,081240958995,Villa Akira,1,6,retno-astari-wasito
+Chairul Ichsan,085624814215,Villa Bata Merah,1,7,chairul-ichsan
+Ryan Rheinadi,081320576458,Villa Bata Merah,1,08,ryan-rheinadi
+Ardian Wicaksana,087838020037,Villa Bata Merah,1,9,ardian-wicaksana
+Lukman Maulana,087873152133,Villa Bata Putih,1,10,lukman-maulana
+Aziez Nugroho,081215102896,Villa Bata Merah,1,11,aziez-nugroho
+Taufik Harisman,08112226266,Villa Bata Merah,1,12,taufik-harisman
+Aisha Kurniasari,08111951196,Villa Akira,1,14,aisha-kurniasari
+Muhammad Arif Rahman,08119891645,Villa Akira,1,15,muhammad-arif-rahman
+Rifol Sartuni,0811133289,Villa Akira,1,17,rifol-sartuni
+Dewi Taviana Walida,081290040065,Villa Akira,1,18,dewi-taviana-walida
+Abu Bakar Abdul Karim Al-Mukmin,081216359760,Villa Akira,1,19,abu-bakar-abdul-karim-al-mukmin
+Ibrahim Shaquille Abdul Karim,0123456,Villa Akira,1,20,ibrahim-shaquille-abdul-karim
+Arlin Sifana,082133292173,Villa Akira,1,21,arlin-sifana
+Siti Rahma,085217192655,Villa Akira,1,22,siti-rahma
+Iriano Haroen,081381481511,Villa Akira,1,23,iriano-haroen
+Fajar Sidiq,085735602542,Villa Bata Putih,1,25,fajar-sidiq
+Aldy Kurnia Ramadhan,087715395234,Villa Bata Putih,1,26,aldy-kurnia-ramadhan
+Dimas Muhammad Rizky,085250027233,Villa Bata Putih,1,27,dimas-muhammad-rizky
+Afina Azizah,082119463203,Villa Bata Putih,1,28,afina-azizah
+Aditya Afit Pratama,082122433863,Villa Bata Putih,1,29,aditya-afit-pratama
+Nabila Akmalita Khairul Islam,081290349506,,1,30,nabila-akmalita-khairul-islam
+Iqbal M Pradana,081330150153,Villa Bata Putih,1,31,iqbal-m-pradana
+Salsa,081932073737,,1,32,xxx
+Cilhardianto Satriawan,082131638069,Villa Bata Merah,1,33,cilhardianto-satriawan
+Karina Zakia,082244404330,Villa Bata Putih,1,34,karina-zakia
+Barlian Farida Ajeng Putri,087785682000,,1,35,barlian-farida-ajeng-putri
+Guntario Sukma Cahyani,08112240047,Villa Bata Merah,1,36,guntario-sukma-cahyani
+Tezza Lantika Riyanto,085271295984,,1,37,tezza-lantika-riyanto
+Jonathan Ery Pradana,08112766740,Villa Bata Merah,1,38,jonathan-ery-pradana
+Dennice Herpudyo,081322273765,Villa Bata Merah,1,39,dennice-herpudyo
+Araminta Setyawati,082232112009,,1,40,araminta-setyawati
+Kezia Yemima Tuju,081296219656,Villa Bata Merah,1,41,kezia-yemima-tuju
+Muhammad Maulana Abdullah,08118821733,,1,42,maulana-abdullah
+Rio Eka Putra,081363166546,Villa Akira,1,43,rio-eka-putra
+Amral Nazar,08986948214,Villa Akira,1,44,amral-nazar
+Rahmat Alfianto,085722249078,Villa Bata Putih,1,45,rahmat-alfianto
+Boromeus Agie,081313167093,Villa Akira,1,46,boromeus-agie
+Amanda Dina Erika,089602613254,Villa Akira,1,47,amanda-dina-erika
+Rika Mandasari,081297787661,Villa Bata Putih,1,48,rika-mandasari
+Om Irsan,087710108159,Villa Batu Tua,1,49,om-irsan
+Tante Anis,08176910707,Villa Batu Tua,1,50,tante-anis
+Hajdah Aleyda (Anak T Anis),082225631528,Villa Batu Tua,1,51,hajdah-aleyda-(anak-t-anis)
+Tante Anne,085959545073,Villa Batu Tua,1,52,tante-anne
+Om Ekky,085776202320,Villa Batu Tua,1,53,om-ekky
+Cikda,082131023282,Villa Batu Tua,1,54,cikda
+Cil Yustin,081281161117,Villa Batu Tua,1,55,cil-yustin
+Mang Amu,081299100063,Villa Batu Tua,1,56,mang-amu
+Om Don,081385363223,Villa Batu Tua,1,57,om-don
+Tante Dewi,081291043269,Villa Batu Tua,1,58,tante-dewi
+Tante Henny,0816974431,Villa Bumi Elok Pondok 1,1,59,tante-henny
+Om Epi,08112161060,Villa Bumi Elok,1,60,om-epi
+Om Endy,08122045912,Villa Bumi Elok Pondok 2,1,61,om-endy
+Tante Neneng,08156109104,Villa Bumi Elok Pondok 2,1,62,tante-neneng
+Tante It,082124997277,Villa Bumi Elok,1,63,tante-it
+Om Datuak,08125512427,Villa Bumi Elok,1,64,om-datuak
+Tante Amy,08116602898,Villa Bumi Elok,1,65,tante-amy
+Tante Diva,082116772808,Villa Bumi Elok Pondok 1,1,66,tante-diva
+Gaek Ruslami,087811510029,Villa Bumi Elok,1,67,gaek-ruslami
+Nenek Ama,081322705219,Villa Bumi Elok,1,68,nenek-ama
+Nenek Bahnidar,081396758477,Villa Bumi Elok,1,69,nenek-bahnidar
+Jo Putih,08127014824,Villa Batu Tua,1,70,jo-putih
+Yan Harlan,081317988527,Villa Bumi Elok Pondok 1,0,-1,yan-harlan
+Yana Yan Harlan,081386291776,Villa Bumi Elok Pondok 1,0,-1,yana-yan-harlan
+Safira Hanim Winata,085974928650,Villa Bumi Elok Pondok 2,0,-1,safira-hanim-winata
+Hilma Mutiara Winata,085974928627,Villa Bumi Elok Pondok 2,0,-1,hilma-mutiara-winata
+Suami Muti /Aa Rela,08562134818,Villa Bumi Elok Pondok 2,0,-1,suami-muti
+Antonius Kunta,081519028642,,0,-1,antonius-kunta
+Aditia Suhanda,0811170400,,0,-1,aditia-suhanda
+Reza Fahlevy,081212256790,,0,-1,reza-fahlevy
+Bayu Isnandar,08179933557,,0,-1,bayu-isnandar
+Amin Fauzi,08111986708,,0,-1,amin-fauzi
+Yasrul Ghaffar,08128426933,,0,-1,yasrul-ghaffar
+Bapak Jusuf Kiesworo,08113865678,,0,-1,
+Ibu Widhiyanti,0818142370,,0,-1,
+Bapak Made Fredy Saputra,0811876333,,0,-1,
+Eril Firmansyah,0811918330,,0,-1,
+Novianto Hermawan,081519028640,,0,-1,
+Guruh Ditto Rhakita,08111890647,,0,-1,
+Aditya Firmansyah,08111985788,,0,-1,
+Selsi Woweni,081374053989,,0,-1,
+Rissa Pasla,081212556640,,0,-1,
+Muhamat Riando,081295847045,,0,-1,
+Om Nas,0816781531,,0,-1,
+Elok Emi,087723081958,,0,-1,
+Om Syaiful,0811101399,,0,-1,
+Tante Resty,08111200253,,0,-1,
+Tante Novi Oemar,081514880367,,0,-1,
+Om Rona,4325345,,0,-1,
+Om Harry Oemar,08151613233,,0,-1,
+Om Herry Azwir,0811861860,,0,-1,
+Tante Linda,08128728467,,0,-1,
+Irfan,08119728968,,0,-1,
+Syifa,087879373268,,0,-1,
+Om Fauzan Musa,0811171300,,0,-1,
+Tante Aisha,0818170080,,0,-1,
+Om Syahral,081806792990,,0,-1,
+Tante Eva,0818496594,,0,-1,
+Isal,087877866240,,0,-1,
+Febby,082258198191,,0,-1,
+Putra,082116334925,,0,-1,
+Edo,081399268806,,0,-1,
