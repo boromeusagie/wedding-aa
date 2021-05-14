@@ -25,6 +25,11 @@ class HomeController extends Controller
             ->get();
         if (Auth::check()) {
             $user = Auth::user();
+
+            if ($user->username === 'admin') {
+                return view('admin.dashboard', ['user' => $user]);
+            }
+
             $menuUser = Menu::where('user_id', $user->id)->get();
             $checkMenu = $menuUser->count() < 1 ? false : true;
             $villa = '';
