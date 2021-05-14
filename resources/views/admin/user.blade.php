@@ -30,6 +30,7 @@
             <th>Username</th>
             <th>Phone</th>
             <th>Order Menu</th>
+            <th>Villa</th>
             <th>Table</th>
             <th>MUA</th>
             <th>Attend</th>
@@ -44,12 +45,13 @@
                 <td>{{ $item->username }}</td>
                 <td>{{ $item->phone }}</td>
                 <td>{{ $item->is_order === '1' ? 'Yes' : 'No' }}</td>
+                <td>{{ $item->villa }}</td>
                 <td>{{ $item->no_table != '-1' ? $item->no_table : '-' }}</td>
                 <td>{{ $item->is_mua }}</td>
                 <td>{{ $item->attend }}</td>
                 <td>
                     <div class="btn-group">
-                        <button type="button" data-toggle="modal" data-target="#updateItem" data-name="{{ $item->name }}" data-username="{{ $item->username }}" data-phone="{{ $item->phone }}" data-isorder="{{ $item->is_order }}" data-id="{{ $item->id }}" class="btn btn-sm text-primary" title="Edit">
+                        <button type="button" data-toggle="modal" data-target="#updateItem" data-name="{{ $item->name }}" data-username="{{ $item->username }}" data-phone="{{ $item->phone }}" data-isorder="{{ $item->is_order }}" data-villa="{{ $item->villa }}" data-id="{{ $item->id }}" class="btn btn-sm text-primary" title="Edit">
                           <i class="fas fa-edit"></i>
                         </button>
                         <button type="button" data-toggle="modal" data-target="#deleteItem" data-name="{{ $item->name }}" data-id="{{ $item->id }}" class="btn btn-sm text-danger" title="Delete">
@@ -137,6 +139,21 @@
                 </select>
               </div>
             </div>
+            <div class="form-group row">
+              <label class="col-sm-2">Villa</label>
+              <div class="col-sm-10 m-0 p-0">
+                <select name="villa" id="villa">
+                  <option value="" {{ old('villa') === null ? 'selected' : null }}>No Villa</option>
+                  <option value="Villa Akira" {{ old('villa') === 'Villa Akira' ? 'selected' : null }}>Villa Akira</option>
+                  <option value="Villa Bata Merah" {{ old('villa') === 'Villa Bata Merah' ? 'selected' : null }}>Villa Bata Merah</option>
+                  <option value="Villa Bata Putih" {{ old('villa') === 'Villa Bata Putih' ? 'selected' : null }}>Villa Bata Putih</option>
+                  <option value="Villa Batu Tua" {{ old('villa') === 'Villa Batu Tua' ? 'selected' : null }}>Villa Batu Tua</option>
+                  <option value="Villa Bumi Elok" {{ old('villa') === 'Villa Bumi Elok' ? 'selected' : null }}>Villa Bumi Elok</option>
+                  <option value="Villa Bumi Elok Pondok 1" {{ old('villa') === 'Villa Bumi Elok Pondok 1' ? 'selected' : null }}>Villa Bumi Elok Pondok 1</option>
+                  <option value="Villa Bumi Elok Pondok 2" {{ old('villa') === 'Villa Bumi Elok Pondok 2' ? 'selected' : null }}>Villa Bumi Elok Pondok 2</option>
+                </select>
+              </div>
+            </div>
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -185,6 +202,7 @@
         var username = button.data('username')
         var phone = button.data('phone')
         var isorder = button.data('isorder')
+        var villa = button.data('villa')
         var idItem = button.data('id')
         let url = "{{ route('admin-user-update', ['id' => ':id']) }}"
         url = url.replace(':id', idItem)
@@ -193,6 +211,7 @@
         modal.find('input#name').val(name)
         modal.find('input#username').val(username)
         modal.find('input#phone').val(phone)
+        modal.find('select#villa').val(villa)
         modal.find('select#is_order').val(isorder)
         
         document.updateItem.action = get_action();

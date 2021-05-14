@@ -90,6 +90,7 @@ class AdminController extends Controller
         $user->username = $request->username;
         $user->phone = $request->phone;
         $user->is_order = $request->is_order;
+        $user->villa = $request->villa;
         $user->password = Hash::make($request->phone);
         $user->save();
 
