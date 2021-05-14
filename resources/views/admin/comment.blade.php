@@ -90,7 +90,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <form name="deleteItem" class="delete-item">
+          <form name="deleteItem" class="delete-item" method="post">
             @csrf
             @method('delete')
             <button type="submit" class="btn btn-danger">Delete</button>
