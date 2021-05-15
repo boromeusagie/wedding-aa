@@ -25,7 +25,7 @@
                     <div class="card-body">
                         <img src="images/app/wear-guide.png" alt="" class="img-responsive">
                         <br>
-                        @if ($user->is_mua === null)
+                        @if ($user->is_mua === null && $user->no_table != '-1')
                             <p class="text-center font-weight-bold">
                                 Do you want to use MUA?<br>
                                 <small class="text-muted">(additional charge for MUA Rp 300.000)</small>

@@ -203,6 +203,23 @@
                     <h2 style="margin-bottom: 10px;">Things to Note</h2>
                     <h3>IMPORTANT</h3>
                     <h4>Our ceremony and reception will be held at Villa Akira. Located on Megamendung Bogor, it has a beautiful, unobstructed view of the rice field and beautiful village in Puncak.</h4>
+                    @if ($user->no_table === '-1' && $user->attend === null)
+                        <form action="{{ route('submit-attend') }}" method="post">
+                            @csrf
+                            <h4 class="mt-5">Will you attend?</h4>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="attend" id="inlineRadio1" value="Yes">
+                                <label class="form-check-label font-weight-normal" for="inlineRadio1">Yes, I'll be there</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="attend" id="inlineRadio2" value="No">
+                                <label class="form-check-label font-weight-normal" for="inlineRadio2">No, I can't come</label>
+                            </div>
+                            <div class="mt-5">
+                                <button type="submit" class="btn btn-primary">SUBMIT</button>
+                            </div>
+                        </form>
+                    @endif
                     <div class="row text-center justify-content-center">
                         @if ($user->is_order === '1')
                             <div class="col-md-4 gla_round_block">

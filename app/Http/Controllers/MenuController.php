@@ -27,6 +27,20 @@ class MenuController extends Controller
         return view('order', ['user' => $user]);
     }
 
+    public function submitAttend(Request $request)
+    {
+        $user = Auth::user();
+        $user->attend = $request->attend;
+        $user->save();
+
+        if ($request->attend === 'Yes') {
+            toastr()->success('You have choosen to attend.');
+        } else {
+            toastr()->success('You have choosen to not attend.');
+        }
+        return redirect()->route('homepage');
+    }
+
     public function orderMenu(Request $request)
     {
         $customMessages = [

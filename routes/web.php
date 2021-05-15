@@ -21,6 +21,7 @@ Route::post('/comment', 'HomeController@storeComment')->name('comment-post');
 Route::get('/order', 'MenuController@showMenu')->name('order');
 Route::post('/order', 'MenuController@orderMenu')->name('order-post');
 Route::post('/mua', 'MenuController@storeMua')->name('mua-store');
+Route::post('/attend', 'MenuController@submitAttend')->name('submit-attend');
 Route::get('/wear', 'MenuController@showWear')->name('wear');
 Route::get('/user-excel-export', 'HomeController@download')->name('user.export');
 Route::get('/{username}', 'Auth\LoginController@loginForm')->name('login.show');
