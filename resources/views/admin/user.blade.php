@@ -54,7 +54,7 @@
                 <td>{{ $item->attend }}</td>
                 <td>
                     <div class="btn-group">
-                        <button type="button" data-toggle="modal" data-target="#updateItem" data-name="{{ $item->name }}" data-username="{{ $item->username }}" data-phone="{{ $item->phone }}" data-isorder="{{ $item->is_order }}" data-villa="{{ $item->villa }}" data-id="{{ $item->id }}" class="btn btn-sm text-primary" title="Edit">
+                        <button type="button" data-toggle="modal" data-target="#updateItem" data-name="{{ $item->name }}" data-username="{{ $item->username }}" data-phone="{{ $item->phone }}" data-isorder="{{ $item->is_order }}" data-villa="{{ $item->villa }}" data-table="{{ $item->no_table }}" data-id="{{ $item->id }}" class="btn btn-sm text-primary" title="Edit">
                           <i class="fas fa-edit"></i>
                         </button>
                         <button type="button" data-toggle="modal" data-target="#deleteItem" data-name="{{ $item->name }}" data-id="{{ $item->id }}" class="btn btn-sm text-danger" title="Delete">
@@ -243,6 +243,16 @@
                 </select>
               </div>
             </div>
+            <div class="form-group row">
+              <label for="newNoTable" class="col-sm-2 col-form-label">No. Table</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control @error('no_table') is-invalid @enderror" name="no_table" value="{{ old('no_table') }}" id="no_table">
+                  <span class="text-muted">Fill "-1" if doesn't have no. table</span>
+                  @error('no_table')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                  @enderror
+              </div>
+            </div>
           </div>
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -306,6 +316,7 @@
         var phone = button.data('phone')
         var isorder = button.data('isorder')
         var villa = button.data('villa')
+        var table = button.data('table')
         var idItem = button.data('id')
         let url = "{{ route('admin-user-update', ['id' => ':id']) }}"
         url = url.replace(':id', idItem)
@@ -314,6 +325,7 @@
         modal.find('input#name').val(name)
         modal.find('input#username').val(username)
         modal.find('input#phone').val(phone)
+        modal.find('input#no_table').val(table)
         modal.find('select#villa').val(villa)
         modal.find('select#is_order').val(isorder)
         

@@ -112,7 +112,8 @@ class AdminController extends Controller
                 'name' => 'required|string',
                 'username' => 'required|string',
                 'phone' => 'required|unique:users,phone,'.$id.'|string',
-                'is_order' => 'required|string'
+                'is_order' => 'required|string',
+                'no_table' => 'required|string'
             ], $customMessages
         );
 
@@ -123,6 +124,7 @@ class AdminController extends Controller
         $user->phone = $request->phone;
         $user->is_order = $request->is_order;
         $user->villa = $request->villa;
+        $user->no_table = $request->no_table;
         $user->password = Hash::make($request->phone);
         $user->save();
 
