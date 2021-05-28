@@ -194,7 +194,8 @@
 		autoPlay : true, 
 		singleItem:true,
 		autoHeight : true,
-		touchDrag:true, 
+		touchDrag:true,
+		pagination: false,
 		navigationText:['<i class="ti ti-angle-left"></i>','<i class="ti ti-angle-right"></i>']
 	});
 
